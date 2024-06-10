@@ -162,6 +162,9 @@
 }
 
 @media screen and (max-width: 768px) {
+	.containerSkeleton {
+		height: 400px;
+	}
 	.container {
 		padding: 24px 12px 0 12px;
 	}
