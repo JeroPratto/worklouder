@@ -1,3 +1,9 @@
+.containerSkeleton {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100%;
+}
 .container {
 	background-color: #000;
 	padding: 24px;

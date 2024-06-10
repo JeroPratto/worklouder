@@ -2,6 +2,7 @@ import { useCartStore } from '@/store/cartStore'
 import { useOpenCartStore } from '@/store/openCartStore'
 import React, { useEffect, useState } from 'react'
 import Marquee from 'react-fast-marquee'
+import Skeleton from 'react-loading-skeleton'
 import { useLocation } from 'react-router-dom'
 import {
 	Product,
@@ -47,13 +48,24 @@ const ProductPage: React.FC<ProductPageProps> = ({ product }) => {
 			openCart()
 		}
 	}
-
+	const [isLoaded, setIsLoaded] = useState(false)
 	return (
 		<div className={styles.container}>
 			<section className={styles.section}>
 				<div className={styles.imageAndInformation}>
 					<div className={styles.containerImage}>
-						<img src={currentImage} alt={product.name} />
+						{!isLoaded && (
+							<Skeleton
+								height='75%'
+								containerClassName={styles.containerSkeleton}
+							/>
+						)}
+						<img
+							src={currentImage}
+							alt={product.name}
+							style={{ display: isLoaded ? 'block' : 'none' }}
+							onLoad={() => setIsLoaded(true)}
+						/>
 					</div>
 					<div className={styles.informationContainer}>
 						<h1 className={styles.title}>{product.name}</h1>
