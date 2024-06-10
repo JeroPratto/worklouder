@@ -1,0 +1,48 @@
+.containerSettings {
+	margin-bottom: 10px;
+}
+.titleSettings {
+	margin-bottom: 7px;
+	color: #000;
+	font-size: 15px;
+	font-weight: 500;
+}
+.error {
+	color: red;
+	font-weight: 300;
+}
+.options {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.item input {
+	display: none;
+}
+.item label {
+	margin: 0 10px 10px 0;
+	border: 1px solid rgb(96, 96, 96);
+	font-size: 16px;
+	font-weight: 300;
+	padding: 10px;
+	border-radius: 5px;
+	color: #000;
+	background-color: transparent;
+	cursor: pointer;
+	display: inline-block;
+}
+
+.current label {
+	color: #fff;
+	border: 1px solid #000;
+	border-radius: 25px;
+	background-color: #000;
+}
+
+@media screen and (max-width: 768px) {
+	.item label {
+		font-size: 14px;
+		font-weight: 300;
+		padding: 7px;
+	}
+}

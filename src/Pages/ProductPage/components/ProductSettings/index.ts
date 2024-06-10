@@ -1,0 +1,1 @@
+export { default as ProductSettings } from './ProductSettings';

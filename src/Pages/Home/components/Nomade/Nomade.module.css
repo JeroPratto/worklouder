@@ -1,0 +1,118 @@
+.container {
+	padding: 24px;
+	padding-top: 0;
+	background-color: #000;
+}
+
+.main {
+	display: flex;
+	width: 100%;
+}
+
+.left {
+	width: 50%;
+	min-height: 100%;
+	background-color: #d8d8d8;
+	background-image: url(/home/Nomad-Atom-mob.png);
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: contain;
+	border-radius: 20px 0 0 20px;
+}
+
+.right {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+	border-radius: 0 20px 20px 20px;
+}
+.titleContainer {
+	padding: 40px;
+	background-color: var(--yellow);
+	display: flex;
+	flex-direction: column;
+	border-radius: 0 20px 20px 20px;
+	position: relative;
+	z-index: 10;
+}
+.class {
+	color: #fff;
+	background-color: #000;
+	border-radius: 50px;
+	font-size: 13px;
+	padding: 10px 20px;
+	margin-bottom: 20px;
+	width: min-content;
+}
+
+.name {
+	color: #000;
+	font-size: 40px;
+	margin-bottom: 20px;
+	font-weight: 500;
+}
+
+.desc {
+	display: flex;
+	flex-direction: column;
+	color: #000;
+	font-size: 14px;
+	margin-bottom: calc(80px + 1rem);
+}
+
+.descriptionContainer {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+	color: #000;
+	font-size: 14px;
+}
+.descriptionContainer p {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 1rem;
+	max-width: 50%;
+}
+.descriptionContainer strong {
+	font-weight: 600;
+}
+
+.explore {
+	border: 1px solid #000;
+	border-radius: 50px;
+	padding: 12px 24px;
+	text-align: center;
+	color: #000;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.explore img {
+	margin-left: 7px;
+	height: 13px;
+	width: 15px;
+}
+.rightImages {
+	display: flex;
+	width: 100%;
+}
+.rightImages img {
+	height: 370px;
+	object-fit: cover;
+	object-position: center center;
+}
+.firstImage {
+	width: 66%;
+	margin-top: -20px;
+}
+.secondImage {
+	margin-top: -20px;
+	width: 34%;
+	border-end-end-radius: 20px;
+}
+
+@media screen and (max-width: 768px) {
+	.container {
+		display: none;
+	}
+}

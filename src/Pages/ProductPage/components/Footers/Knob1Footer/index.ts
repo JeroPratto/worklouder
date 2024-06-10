@@ -1,0 +1,1 @@
+export { default as Knob1Footer } from './Knob1Footer';

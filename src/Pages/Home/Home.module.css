@@ -1,0 +1,19 @@
+.marquee {
+	background-color: #000;
+	padding: 80px 0;
+	color: #fff;
+	font-size: 100px;
+	line-height: 1.1em;
+}
+.marquee img {
+	height: 1em;
+	width: 1em;
+	margin: 0 0.07em;
+}
+
+@media screen and (max-width: 768px) {
+	.marquee {
+		padding: 40px 0;
+		font-size: 80px;
+	}
+}

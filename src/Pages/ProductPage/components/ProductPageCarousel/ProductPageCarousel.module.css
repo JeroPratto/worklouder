@@ -1,0 +1,61 @@
+.container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #000;
+}
+.embla {
+	overflow: hidden;
+	background-color: #000;
+	max-width: 1120px;
+	color: #fff;
+	position: relative;
+}
+.emblaContainer {
+	display: flex;
+	background-color: #000;
+}
+.slide {
+	flex: 0 0 100%;
+	width: 1120px;
+	max-width: 1120px;
+	overflow: hidden;
+	background-color: #000;
+	margin-right: 24px;
+	cursor: grab;
+}
+.slide img {
+	border-radius: 20px;
+	height: 600px;
+	width: 100%;
+}
+
+.containerBtns {
+	position: absolute;
+	bottom: 20px;
+	z-index: 10;
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.containerBtns button {
+	margin: 0 6px;
+	border: none;
+	background-color: #000;
+	cursor: pointer;
+	height: 6px;
+	width: 6px;
+	transform: matrix(0.72, 0, 0, 0.72, 0, 0);
+	border-radius: 100%;
+}
+
+.current {
+	transform: scale(1.2) !important;
+}
+
+@media screen and (max-width: 768px) {
+	.slide img {
+		height: 250px;
+	}
+}

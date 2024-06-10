@@ -1,0 +1,203 @@
+.header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+	margin-bottom: -90px;
+	padding: 34px 60px 0px 60px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.linkLogo {
+	width: 25%;
+}
+.linkLogo img {
+	width: 60px;
+}
+.cart {
+	width: 25%;
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+	height: 100%;
+}
+.cartButton {
+	border: none;
+	background-color: var(--yellow);
+	cursor: pointer;
+	padding: 8px 15px;
+	border-radius: 20px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+}
+.cartButton img {
+	height: 22px;
+	width: 28px;
+}
+.stickyCart {
+	height: auto;
+	position: fixed;
+	right: 60px;
+	top: 20px;
+}
+.nav {
+	max-width: min-content;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: #ffffffa1;
+	border-radius: 35px 35px 35px 35px;
+}
+.stickyNav {
+	position: fixed;
+	left: 50%;
+	transform: translateX(-50%);
+	top: 15px;
+}
+.navLink {
+	margin: 5px;
+	color: #000;
+	font-size: 14px;
+	line-height: 20px;
+	padding: 13px 20px;
+	border-radius: 35px 35px 35px 35px;
+	cursor: pointer;
+}
+.navLink:hover,
+.current {
+	background-color: var(--yellow);
+}
+.menuButton {
+	display: none;
+}
+.mobileNav {
+	display: none;
+}
+@media screen and (max-width: 1024px) {
+	.header {
+		padding: 50px 40px 0px 40px;
+	}
+	.linkLogo {
+		width: 15%;
+	}
+	.linkLogo img {
+		width: 40%;
+	}
+	.navLink {
+		padding: 13px 10px;
+		font-size: 13px;
+	}
+	.cart {
+		width: 15%;
+	}
+	.stickyCart {
+		right: 40px;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.header {
+		padding: 13px 30px 0px 30px;
+		height: 76px;
+	}
+	.linkLogo {
+		width: 60%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.linkLogo picture {
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		width: 100%;
+	}
+	.linkLogo img {
+		width: 70%;
+		height: 28px;
+	}
+	.nav {
+		display: none;
+	}
+	.mobileNav {
+		display: grid;
+		grid-template-rows: 0fr;
+		position: absolute;
+		top: 100%;
+		left: 0;
+		width: 100%;
+		background-color: #fff;
+		border-radius: 35px 35px 35px 35px;
+		transition: grid-template-rows 0.5s ease;
+	}
+	.mobileNavOpen {
+		grid-template-rows: 1fr;
+	}
+	.containerMobileNav {
+		overflow: hidden;
+		display: flex;
+		text-align: center;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		width: 100%;
+	}
+	.menuButton {
+		display: block;
+	}
+	.cart {
+		display: flex;
+		justify-content: flex-end;
+		align-items: center;
+		width: 30%;
+		padding-top: 7px;
+	}
+	.cartButton {
+		padding: 10px 13px;
+		border-radius: 12px;
+		height: auto;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	.cartButton img {
+		height: 18px;
+		width: 28px;
+	}
+	.stickyCart {
+		height: auto;
+		position: static;
+	}
+	.menuButton {
+		margin-left: 20px;
+		border-radius: 100%;
+		background-color: #ffffff30;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0.4em;
+		cursor: pointer;
+		border: 0;
+	}
+	.menuButton img {
+		height: 22px;
+		width: 22px;
+	}
+	.navLink {
+		margin: 5px;
+		font-size: 14px;
+		line-height: 20px;
+		padding: 13px 20px;
+		border-radius: 0;
+		width: 100%;
+		border-bottom: 1px solid #eaeaea;
+	}
+	.navLink:hover {
+		background-color: transparent;
+	}
+}

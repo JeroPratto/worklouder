@@ -1,0 +1,173 @@
+/* frontal-knob */
+.container {
+	padding: 24px;
+	padding-top: 0;
+	display: flex;
+	background-color: #000;
+	width: 100%;
+}
+.container:first-child {
+	display: none;
+}
+.half {
+	width: 50%;
+	padding: 12px 12px;
+}
+.half:nth-child(3) {
+	padding: 0px 12px 12px 24px;
+}
+.half:nth-child(4) {
+	padding: 0px 24px 12px 12px;
+}
+.half:nth-child(5) {
+	padding: 12px 12px 24px 24px;
+}
+.half:nth-child(6) {
+	padding: 12px 24px 24px 12px;
+}
+.left {
+	width: 33.333%;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	flex-direction: column;
+	padding: 40px;
+	border-radius: 20px 0 0 20px;
+	background-color: #ff4d00;
+}
+.half .left {
+	width: 50%;
+	justify-content: space-between;
+	padding: 40px 20px 40px 40px;
+}
+.classMobile,
+.classDesktop {
+	background-color: #fff;
+	border-radius: 50px;
+	font-size: 13px;
+	padding: 10px 20px;
+	margin-bottom: 20px;
+	width: min-content;
+}
+.classMobile {
+	display: none;
+}
+.name {
+	font-size: 40px;
+	margin-bottom: 10px;
+	font-weight: 500;
+	line-height: 1;
+}
+.price {
+	/* color: #000; */
+	font-size: 14px;
+	margin-bottom: 70px;
+}
+.desc {
+	/* color: #000; */
+	font-size: 14px;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: calc(1rem + 20px);
+}
+.desc strong {
+	font-weight: 600;
+}
+
+.explore {
+	border: 1px solid #000;
+	border-radius: 50px;
+	padding: 12px 24px;
+	text-align: center;
+	width: min-content;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.explore img {
+	margin-left: 7px;
+	height: 13px;
+	width: 15px;
+}
+
+.productImage {
+	width: 66.666%;
+	min-height: 100%;
+	max-height: 100%;
+	background-repeat: no-repeat;
+	border-radius: 0 20px 20px 0;
+	background-color: #d7d7d7;
+}
+.half .productImage {
+	width: 50%;
+}
+@media screen and (max-width: 1024px) {
+	.half {
+		width: 100%;
+		padding: 24px !important;
+		padding-top: 0 !important;
+	}
+	.left {
+		width: 50%;
+	}
+	.productImage {
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.container:first-child {
+		display: block;
+	}
+	.container,
+	.half {
+		position: relative;
+		padding: 12px !important;
+	}
+	.left,
+	.half .left {
+		position: absolute;
+		bottom: 12px;
+		left: 12px;
+		width: 100%;
+		max-width: calc(100% - 24px);
+		padding: 20px;
+		border-radius: 20px;
+	}
+	.name {
+		font-size: 20px;
+		margin-bottom: 10px;
+	}
+	.classMobile {
+		position: absolute;
+		top: 32px;
+		left: 32px;
+		display: block;
+	}
+	.desc,
+	.classDesktop {
+		display: none;
+	}
+	.productImage,
+	.half .productImage {
+		border-radius: 20px;
+		width: 100%;
+		height: 410px;
+	}
+	.price {
+		margin-bottom: 0;
+	}
+	.explore {
+		position: absolute;
+		right: 20px;
+		bottom: 20px;
+		font-size: 13px;
+		padding: 10px 20px;
+	}
+	.explore img {
+		margin-left: 5px;
+		height: 10px;
+		width: 12px;
+	}
+}
