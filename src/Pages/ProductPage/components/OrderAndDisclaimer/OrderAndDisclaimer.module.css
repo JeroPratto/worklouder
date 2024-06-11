@@ -1,0 +1,31 @@
+.orderBtn {
+	margin-top: 15px;
+	margin-bottom: 15px;
+	width: 100%;
+	background-color: var(--yellow);
+	cursor: pointer;
+	padding: 0.7em 0px;
+	border: none;
+	text-align: center;
+	color: #000;
+	min-height: 45px;
+	font-size: 16px;
+	font-weight: 300;
+	border-radius: 25px;
+}
+.preOrderDisclaimer {
+	color: #000;
+	font-size: 13px;
+}
+.preOrderDisclaimer strong {
+	font-weight: 600;
+}
+.preOrderDisclaimer span {
+	text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+	.preOrderDisclaimer {
+		font-size: 10px;
+	}
+}

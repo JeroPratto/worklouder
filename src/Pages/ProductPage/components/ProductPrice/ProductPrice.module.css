@@ -1,0 +1,18 @@
+.price {
+	font-size: 20px;
+	line-height: 1;
+	color: #000;
+	font-weight: 500;
+	margin-bottom: 20px;
+}
+.sale {
+	margin-left: 7px;
+	margin-right: 10px;
+	font-weight: 300;
+	color: red;
+}
+.salePrice {
+	margin-left: 10px;
+	text-decoration: line-through;
+	font-weight: 300;
+}
