@@ -57,6 +57,8 @@
 	border-bottom: 1px solid #eaeaea;
 }
 .item a {
+	display: inline-block;
+	width: 100%;
 	color: #000;
 }
 .dropdown:last-child .item:first-child {

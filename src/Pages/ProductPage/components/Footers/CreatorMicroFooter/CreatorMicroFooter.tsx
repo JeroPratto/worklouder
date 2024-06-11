@@ -31,10 +31,16 @@ const CreatorMicroFooter: React.FC = () => {
 					title={['Stay in', 'the zone']}
 				/>
 				<div className={styles.twoThirds}>
-					<img src='/product-page/creator-micro/Micro-5-2048x1365.png' alt='' />
+					<img
+						src='/product-page/creator-micro/Micro-5-2048x1365.webp'
+						alt=''
+					/>
 				</div>
 				<div className={styles.twoThirds}>
-					<img src='/product-page/creator-micro/Micro-6-2048x1365.png' alt='' />
+					<img
+						src='/product-page/creator-micro/Micro-6-2048x1365.webp'
+						alt=''
+					/>
 				</div>
 				<OneThirdCard
 					bgColor='#1D1D1D'
@@ -73,7 +79,7 @@ const CreatorMicroFooter: React.FC = () => {
 					title={['Have it all.', 'Design and utility']}
 				/>
 				<div className={styles.twoThirds}>
-					<img src='/product-page/creator-micro/Start-Micro-full.jpg' alt='' />
+					<img src='/product-page/creator-micro/Start-Micro-full.webp' alt='' />
 				</div>
 			</div>
 		</div>

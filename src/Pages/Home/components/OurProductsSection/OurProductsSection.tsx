@@ -3,11 +3,8 @@ import styles from './OurProductsSection.module.css'
 import { Link } from 'react-router-dom'
 import arrow from '/icons/arrow-right.svg'
 import arrowWhite from '/icons/arrow-right-white.svg'
-export type OurProductsSectionProps = {
-	// types...
-}
 
-const OurProductsSection: React.FC<OurProductsSectionProps> = ({}) => {
+const OurProductsSection: React.FC = () => {
 	return (
 		<div className={styles.container}>
 			<div className={styles.ourProducts}>

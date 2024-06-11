@@ -2,11 +2,8 @@ import React from 'react'
 import styles from './Nomade.module.css'
 import { Link } from 'react-router-dom'
 import arrow from '/icons/arrow-right.svg'
-export type NomadeProps = {
-	// types...
-}
 
-const Nomade: React.FC<NomadeProps> = ({}) => {
+const Nomade: React.FC = () => {
 	return (
 		<section className={styles.container}>
 			<div className={styles.main}>
@@ -33,12 +30,12 @@ const Nomade: React.FC<NomadeProps> = ({}) => {
 					</div>
 					<div className={styles.rightImages}>
 						<img
-							src='/home/nomad-4-colours-bright-crop.jpg'
+							src='/home/nomad-4-colours-bright-crop.webp'
 							alt=''
 							className={styles.firstImage}
 						/>
 						<img
-							src='/home/RW-Classic-Studio-NOMAD-KICK-UP.216.png'
+							src='/home/RW-Classic-Studio-NOMAD-KICK-UP.216.webp'
 							alt=''
 							className={styles.secondImage}
 						/>

@@ -32,7 +32,7 @@ const NomadeFooter: React.FC = () => {
 					<Video src='/product-page/nomade/caps-press_1.mp4' />
 				</div>
 				<div className={`${styles.oneThird} ${styles.mxContainer}`}>
-					<img src='/product-page/nomade/MX.png' alt='' />
+					<img src='/product-page/nomade/MX.webp' alt='' />
 					<div className={styles.mxDesc}>
 						<p className={styles.mx}>MX</p>
 						<p className={styles.mxText}>
@@ -68,7 +68,7 @@ const NomadeFooter: React.FC = () => {
 					}
 				/>
 				<div className={styles.twoThirds}>
-					<img src='/product-page/nomade/Language-chalk.png' alt='' />
+					<img src='/product-page/nomade/Language-chalk.webp' alt='' />
 				</div>
 			</div>
 		</div>

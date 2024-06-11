@@ -28,12 +28,15 @@ const CreatorBoardFooter: React.FC = () => {
 				/>
 				<div className={styles.twoThirds}>
 					<img
-						src='/product-page/creator-board/R4-CB-1-rgb-2048x1365.png'
+						src='/product-page/creator-board/R4-CB-1-rgb-2048x1365.webp'
 						alt=''
 					/>
 				</div>
 				<div className={styles.twoThirds}>
-					<img src='/product-page/creator-board/R4-CB-6-2048x1365.png' alt='' />
+					<img
+						src='/product-page/creator-board/R4-CB-6-2048x1365.webp'
+						alt=''
+					/>
 				</div>
 				<OneThirdCard
 					bgColor='#1D1D1D'
@@ -49,7 +52,10 @@ const CreatorBoardFooter: React.FC = () => {
 					title={['Harness the power', 'of your inner short-cut ninja']}
 				/>
 				<div className={styles.twoThirds}>
-					<img src='/product-page/creator-board/R4-CB-5-2048x1365.png' alt='' />
+					<img
+						src='/product-page/creator-board/R4-CB-5-2048x1365.webp'
+						alt=''
+					/>
 				</div>
 				<OneThirdCard
 					bgColor='#BFBFBF'

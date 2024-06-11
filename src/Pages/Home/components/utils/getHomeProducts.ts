@@ -32,17 +32,17 @@ export const getHomeProducts = () => {
 				desktop: {
 					position: 'top center',
 					size: '160% auto',
-					url: '/home/nomad-4-colours-bright.jpg',
+					url: '/home/nomad-4-colours-bright.webp',
 				},
 				tablet: {
 					position: 'top center',
 					size: '160% auto',
-					url: '/home/nomad-4-colours-bright.jpg',
+					url: '/home/nomad-4-colours-bright.webp',
 				},
 				mobile: {
 					position: 'top center',
 					size: '160% auto',
-					url: '/home/nomad-4-colours-bright.jpg',
+					url: '/home/nomad-4-colours-bright.webp',
 				},
 			},
 			informationBgColor: '#EDFF00',
