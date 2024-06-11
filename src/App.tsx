@@ -1,3 +1,4 @@
+import { Suspense, lazy, useEffect } from 'react'
 import 'react-loading-skeleton/dist/skeleton.css'
 import {
 	BrowserRouter,
@@ -6,14 +7,11 @@ import {
 	Routes,
 	useLocation,
 } from 'react-router-dom'
-import { Header } from './components/Header'
 import { Home } from './Pages/Home'
-import { Footer } from './components/Footer'
 import { ProductPageGuard } from './Pages/ProductPageGuard'
-import { Shop } from './Pages/Shop'
-import { ErrorPage } from './Pages/ErrorPage'
+import { Footer } from './components/Footer'
+import { Header } from './components/Header'
 import { useCartStore } from './store/cartStore'
-import { useEffect } from 'react'
 
 function App() {
 	const { statusSynchronizer } = useCartStore()
@@ -28,18 +26,22 @@ function App() {
 			window.removeEventListener('storage', handleStorageChange)
 		}
 	})
+	const Shop = lazy(() => import('./Pages/Shop/Shop'))
+	const ErrorPage = lazy(() => import('./Pages/ErrorPage/ErrorPage'))
 
 	return (
 		<BrowserRouter>
 			<ScrollTop />
 			<Header />
-			<Routes>
-				<Route path='/' element={<Home />} />
-				<Route path='/:id' element={<ProductPageGuard />} />
-				<Route path='/shop' element={<Shop />} />
-				<Route path='*' element={<HandleErrorPage />} />
-				<Route path='/404' element={<ErrorPage />} />
-			</Routes>
+			<Suspense>
+				<Routes>
+					<Route path='/' element={<Home />} />
+					<Route path='/:id' element={<ProductPageGuard />} />
+					<Route path='/shop' element={<Shop />} />
+					<Route path='*' element={<HandleErrorPage />} />
+					<Route path='/404' element={<ErrorPage />} />
+				</Routes>
+			</Suspense>
 			<Footer />
 		</BrowserRouter>
 	)
