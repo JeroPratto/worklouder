@@ -1,9 +1,29 @@
-import { Knob1Footer } from '@/Pages/ProductPage/components/Footers/Knob1Footer'
 import { Product } from '../Types/Product'
-import { NomadeFooter } from '@/Pages/ProductPage/components/Footers/NomadeFooter'
-import { CreatorMicroFooter } from '@/Pages/ProductPage/components/Footers/CreatorMicroFooter'
-import { CreatorBoardFooter } from '@/Pages/ProductPage/components/Footers/CreatorBoardFooter'
+import { lazy } from 'react'
+
 const getProducts = () => {
+	const NomadeFooter = lazy(
+		() =>
+			import(
+				'@/Pages/ProductPage/components/Footers/NomadeFooter/NomadeFooter'
+			),
+	)
+	const Knob1Footer = lazy(
+		() =>
+			import('@/Pages/ProductPage/components/Footers/Knob1Footer/Knob1Footer'),
+	)
+	const CreatorMicroFooter = lazy(
+		() =>
+			import(
+				'@/Pages/ProductPage/components/Footers/CreatorMicroFooter/CreatorMicroFooter'
+			),
+	)
+	const CreatorBoardFooter = lazy(
+		() =>
+			import(
+				'@/Pages/ProductPage/components/Footers/CreatorBoardFooter/CreatorBoardFooter'
+			),
+	)
 	const products: Product[] = [
 		{
 			id: 'nomad-e',

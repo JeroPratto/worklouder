@@ -11,9 +11,7 @@ export type ProductViewSectionProps = {
 
 const ProductViewSection: React.FC<ProductViewSectionProps> = ({ product }) => {
 	const [currentImage, setCurrentImg] = useState(product.images.mobile)
-	useEffect(() => {
-		console.log('render')
-	})
+
 	useEffect(() => {
 		const selectImage = () => {
 			const width = window.innerWidth
