@@ -10,22 +10,27 @@ export type ProductViewSectionProps = {
 }
 
 const ProductViewSection: React.FC<ProductViewSectionProps> = ({ product }) => {
-	const [currentImage, setCurrentImg] = useState(product.images.mobile)
+	const getImageByWidth = (width: number) => {
+		if (width <= 768) {
+			return product.images.mobile
+		} else if (width <= 1024) {
+			return product.images.tablet
+		} else {
+			return product.images.desktop
+		}
+	}
+
+	const [currentImage, setCurrentImg] = useState(
+		getImageByWidth(window.innerWidth),
+	)
 
 	useEffect(() => {
-		const selectImage = () => {
-			const width = window.innerWidth
-			if (width <= 768) {
-				setCurrentImg(product.images.mobile)
-			} else if (width <= 1024 && width > 768)
-				setCurrentImg(product.images.tablet)
-			else setCurrentImg(product.images.desktop)
-		}
+		const selectImage = () => setCurrentImg(getImageByWidth(window.innerWidth))
 		window.addEventListener('resize', selectImage)
 		return () => {
 			window.removeEventListener('resize', selectImage)
 		}
-	}, [])
+	}, [product.images])
 
 	return (
 		<div
