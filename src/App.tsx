@@ -12,6 +12,7 @@ import { ProductPageGuard } from './Pages/ProductPageGuard'
 import { Footer } from './components/Footer'
 import { Header } from './components/Header'
 import { useCartStore } from './store/cartStore'
+import LazyShop from './Pages/Shop/LazyShop'
 
 function App() {
 	const { statusSynchronizer } = useCartStore()
@@ -26,7 +27,7 @@ function App() {
 			window.removeEventListener('storage', handleStorageChange)
 		}
 	})
-	const Shop = lazy(() => import('./Pages/Shop/Shop'))
+
 	const ErrorPage = lazy(() => import('./Pages/ErrorPage/ErrorPage'))
 
 	return (
@@ -37,7 +38,7 @@ function App() {
 				<Routes>
 					<Route path='/' element={<Home />} />
 					<Route path='/:id' element={<ProductPageGuard />} />
-					<Route path='/shop' element={<Shop />} />
+					<Route path='/shop' element={<LazyShop />} />
 					<Route path='*' element={<HandleErrorPage />} />
 					<Route path='/404' element={<ErrorPage />} />
 				</Routes>
