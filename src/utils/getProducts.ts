@@ -1,29 +1,27 @@
 import { Product } from '../Types/Product'
 import { lazy } from 'react'
 
+const NomadeFooter = lazy(
+	() =>
+		import('@/Pages/ProductPage/components/Footers/NomadeFooter/NomadeFooter'),
+)
+const Knob1Footer = lazy(
+	() =>
+		import('@/Pages/ProductPage/components/Footers/Knob1Footer/Knob1Footer'),
+)
+const CreatorMicroFooter = lazy(
+	() =>
+		import(
+			'@/Pages/ProductPage/components/Footers/CreatorMicroFooter/CreatorMicroFooter'
+		),
+)
+const CreatorBoardFooter = lazy(
+	() =>
+		import(
+			'@/Pages/ProductPage/components/Footers/CreatorBoardFooter/CreatorBoardFooter'
+		),
+)
 const getProducts = () => {
-	const NomadeFooter = lazy(
-		() =>
-			import(
-				'@/Pages/ProductPage/components/Footers/NomadeFooter/NomadeFooter'
-			),
-	)
-	const Knob1Footer = lazy(
-		() =>
-			import('@/Pages/ProductPage/components/Footers/Knob1Footer/Knob1Footer'),
-	)
-	const CreatorMicroFooter = lazy(
-		() =>
-			import(
-				'@/Pages/ProductPage/components/Footers/CreatorMicroFooter/CreatorMicroFooter'
-			),
-	)
-	const CreatorBoardFooter = lazy(
-		() =>
-			import(
-				'@/Pages/ProductPage/components/Footers/CreatorBoardFooter/CreatorBoardFooter'
-			),
-	)
 	const products: Product[] = [
 		{
 			id: 'nomad-e',
