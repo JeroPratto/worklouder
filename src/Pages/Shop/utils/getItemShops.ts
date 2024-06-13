@@ -15,7 +15,7 @@ interface ItemShop {
 const getItemShop = () => {
 	const data: ItemShop[] = [
 		{
-			urlImage: '/shop/Nomad-Atom-4.102.png',
+			urlImage: '/shop/Nomad-Atom-4.102.webp',
 			widthImage: 'one-hundred',
 			bgColor: '#DFDFDF',
 			class: {
@@ -28,7 +28,7 @@ const getItemShop = () => {
 			widthType: 'whole',
 		},
 		{
-			urlImage: '/shop/Figma-Creator-Micro-768x512.png',
+			urlImage: '/shop/Figma-Creator-Micro-768x512.webp',
 			bgColor: '#DFDFDF',
 			widthImage: 'ninety',
 			class: {
@@ -41,7 +41,7 @@ const getItemShop = () => {
 			widthType: 'half',
 		},
 		{
-			urlImage: '/shop/wrk-Together-shop-768x768.png',
+			urlImage: '/shop/wrk-Together-shop-768x768.webp',
 			bgColor: '#DFDFDF',
 			widthImage: 'fifty',
 			class: {
@@ -55,7 +55,7 @@ const getItemShop = () => {
 		},
 		// ultimo
 		{
-			urlImage: '/shop/Micro-RGB-1-768x512.png',
+			urlImage: '/shop/Micro-RGB-1-768x512.webp',
 			bgColor: '#DFDFDF',
 			widthImage: 'one-hundred',
 			class: {
@@ -68,7 +68,7 @@ const getItemShop = () => {
 			widthType: 'one-third',
 		},
 		{
-			urlImage: '/shop/R4-CB-1-rgb-768x512.png',
+			urlImage: '/shop/R4-CB-1-rgb-768x512.webp',
 			bgColor: '#DFDFDF',
 			widthImage: 'one-hundred',
 			class: {
@@ -81,7 +81,7 @@ const getItemShop = () => {
 			widthType: 'one-third',
 		},
 		{
-			urlImage: '/shop/XL-RGB-Std-768x512.png',
+			urlImage: '/shop/XL-RGB-Std-768x512.webp',
 			bgColor: '#DFDFDF',
 			widthImage: 'one-hundred',
 			class: {
@@ -94,7 +94,7 @@ const getItemShop = () => {
 			widthType: 'one-third',
 		},
 		{
-			urlImage: '/shop/micro-parts-product-web-768x768.png',
+			urlImage: '/shop/micro-parts-product-web-768x768.webp',
 			bgColor: '#DFDFDF',
 			widthImage: 'one-hundred',
 			class: {
@@ -107,7 +107,7 @@ const getItemShop = () => {
 			widthType: 'one-fourth',
 		},
 		{
-			urlImage: '/shop/numpad-product-768x768.png',
+			urlImage: '/shop/numpad-product-768x768.webp',
 			bgColor: '#DFDFDF',
 			widthImage: 'one-hundred',
 			class: {
@@ -120,7 +120,7 @@ const getItemShop = () => {
 			widthType: 'one-fourth',
 		},
 		{
-			urlImage: '/shop/micro-parts-product2-web-768x768.png',
+			urlImage: '/shop/micro-parts-product2-web-768x768.webp',
 			bgColor: '#DFDFDF',
 			widthImage: 'ninety',
 			class: {
@@ -133,7 +133,7 @@ const getItemShop = () => {
 			widthType: 'one-fourth',
 		},
 		{
-			urlImage: '/shop/xl-baseplate-WP-768x768.png',
+			urlImage: '/shop/xl-baseplate-WP-768x768.webp',
 			bgColor: '#DFDFDF',
 			widthImage: 'one-hundred',
 			class: {
@@ -159,7 +159,7 @@ const getItemShop = () => {
 			widthType: 'whole',
 		},
 		{
-			urlImage: '/shop/wrk-Icon-768x768.png',
+			urlImage: '/shop/wrk-Icon-768x768.webp',
 			bgColor: '#DFDFDF',
 			widthImage: 'ninety',
 			class: {
@@ -172,7 +172,7 @@ const getItemShop = () => {
 			widthType: 'one-third',
 		},
 		{
-			urlImage: '/shop/dime-CURE-768x768.png',
+			urlImage: '/shop/dime-CURE-768x768.webp',
 			bgColor: '#DFDFDF',
 			widthImage: 'ninety',
 			class: {
@@ -185,7 +185,7 @@ const getItemShop = () => {
 			widthType: 'one-third',
 		},
 		{
-			urlImage: '/shop/blind-768x768.png',
+			urlImage: '/shop/blind-768x768.webp',
 			bgColor: '#DFDFDF',
 			widthImage: 'ninety',
 			class: {
@@ -198,7 +198,7 @@ const getItemShop = () => {
 			widthType: 'one-third',
 		},
 		{
-			urlImage: '/shop/legend-768x768.png',
+			urlImage: '/shop/legend-768x768.webp',
 			bgColor: '#DFDFDF',
 			widthImage: 'seventy',
 			class: {
@@ -211,7 +211,7 @@ const getItemShop = () => {
 			widthType: 'half',
 		},
 		{
-			urlImage: '/shop/daily-ok-768x768.png',
+			urlImage: '/shop/daily-ok-768x768.webp',
 			bgColor: '#DFDFDF',
 			widthImage: 'seventy',
 			class: {
@@ -224,7 +224,7 @@ const getItemShop = () => {
 			widthType: 'half',
 		},
 		{
-			urlImage: '/shop/untitled.611-CJ7KH0-768x768.png',
+			urlImage: '/shop/untitled.611-CJ7KH0-768x768.webp',
 			bgColor: '#DFDFDF',
 			widthImage: 'one-hundred',
 			class: {
@@ -237,7 +237,7 @@ const getItemShop = () => {
 			widthType: 'one-fourth',
 		},
 		{
-			urlImage: '/shop/00-nano-pad-768x768.png',
+			urlImage: '/shop/00-nano-pad-768x768.webp',
 			bgColor: '#DFDFDF',
 			widthImage: 'ninety',
 			class: {
@@ -250,7 +250,7 @@ const getItemShop = () => {
 			widthType: 'one-fourth',
 		},
 		{
-			urlImage: '/shop/00-loop-pad-768x768.png',
+			urlImage: '/shop/00-loop-pad-768x768.webp',
 			bgColor: '#DFDFDF',
 			widthImage: 'ninety',
 			class: {
@@ -263,7 +263,7 @@ const getItemShop = () => {
 			widthType: 'one-fourth',
 		},
 		{
-			urlImage: '/shop/wrk-stick-768x768.png',
+			urlImage: '/shop/wrk-stick-768x768.webp',
 			bgColor: '#DFDFDF',
 			widthImage: 'one-hundred',
 			class: {
@@ -276,7 +276,7 @@ const getItemShop = () => {
 			widthType: 'one-fourth',
 		},
 		{
-			urlImage: '/shop/animo-wp-home.png',
+			urlImage: '/shop/animo-wp-home.webp',
 			bgColor: '#1D1D1D',
 			widthImage: 'one-hundred',
 			class: {
@@ -289,7 +289,7 @@ const getItemShop = () => {
 			widthType: 'whole',
 		},
 		{
-			urlImage: '/shop/floppy-prod-768x768.png',
+			urlImage: '/shop/floppy-prod-768x768.webp',
 			bgColor: '#DFDFDF',
 			widthImage: 'ninety',
 			class: {
@@ -302,7 +302,7 @@ const getItemShop = () => {
 			widthType: 'half',
 		},
 		{
-			urlImage: '/shop/muriicle-prod-768x768.png',
+			urlImage: '/shop/muriicle-prod-768x768.webp',
 			bgColor: '#DFDFDF',
 			widthImage: 'ninety',
 			class: {

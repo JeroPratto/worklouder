@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
 			</Marquee>
 			<footer className={styles.footer}>
 				<div className={styles.logos}>
-					<img src='/footer/avatar.png' alt='' className={styles.avatar} />
+					<img src='/footer/avatar.webp' alt='' className={styles.avatar} />
 					<img
 						src='/header/wl-logo-full.svg'
 						alt=''

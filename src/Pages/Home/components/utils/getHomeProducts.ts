@@ -59,7 +59,7 @@ export const getHomeProducts = () => {
 			},
 			images: {
 				desktop: {
-					url: '/home/frontal-knob.png',
+					url: '/home/frontal-knob.webp',
 					size: '70% auto',
 					position: 'center center',
 				},
@@ -88,17 +88,17 @@ export const getHomeProducts = () => {
 				desktop: {
 					position: 'center center',
 					size: '140% auto',
-					url: '/home/Figma-Creator-Micro.png',
+					url: '/home/Figma-Creator-Micro.webp',
 				},
 				tablet: {
 					position: 'center center',
 					size: '140% auto',
-					url: '/home/Figma-Creator-Micro.png',
+					url: '/home/Figma-Creator-Micro.webp',
 				},
 				mobile: {
 					position: '50% 15px',
 					size: '110% auto',
-					url: '/home/Creator-micro-Figma-2.png',
+					url: '/home/Creator-micro-Figma-2.webp',
 				},
 			},
 			informationBgColor: '#5551FF',
@@ -115,17 +115,17 @@ export const getHomeProducts = () => {
 				desktop: {
 					position: 'center center',
 					size: 'cover',
-					url: '/home/Caps-together-3.224.png',
+					url: '/home/Caps-together-3.224.webp',
 				},
 				tablet: {
 					position: 'center center',
 					size: 'cover',
-					url: '/home/Caps-together-3.224.png',
+					url: '/home/Caps-together-3.224.webp',
 				},
 				mobile: {
 					position: '50% 15px',
 					size: '100% auto',
-					url: '/home/wrk-Together-shop.png',
+					url: '/home/wrk-Together-shop.webp',
 				},
 			},
 			informationBgColor: '#DFDFDF',
@@ -145,17 +145,17 @@ export const getHomeProducts = () => {
 				desktop: {
 					position: 'center center',
 					size: '140% auto',
-					url: '/home/Micro-RGB-1.png',
+					url: '/home/Micro-RGB-1.webp',
 				},
 				tablet: {
 					position: 'center center',
 					size: '140% auto',
-					url: '/home/Micro-RGB-1.png',
+					url: '/home/Micro-RGB-1.webp',
 				},
 				mobile: {
 					position: 'center center',
 					size: '150% auto',
-					url: '/home/Micro-RGB-1.png',
+					url: '/home/Micro-RGB-1.webp',
 				},
 			},
 			informationBgColor: '#DFDFDF',
@@ -175,17 +175,17 @@ export const getHomeProducts = () => {
 				desktop: {
 					position: 'center center',
 					size: '120% auto',
-					url: '/home/R4-CB-1-rgb.png',
+					url: '/home/R4-CB-1-rgb.webp',
 				},
 				tablet: {
 					position: 'center center',
 					size: '120% auto',
-					url: '/home/R4-CB-1-rgb.png',
+					url: '/home/R4-CB-1-rgb.webp',
 				},
 				mobile: {
 					position: 'center center',
 					size: '120% auto',
-					url: '/home/R4-CB-1-rgb.png',
+					url: '/home/R4-CB-1-rgb.webp',
 				},
 			},
 			informationBgColor: '#DFDFDF',
@@ -204,17 +204,17 @@ export const getHomeProducts = () => {
 				desktop: {
 					position: 'center center',
 					size: '75% auto',
-					url: '/home/XL-RGB-Std.png',
+					url: '/home/XL-RGB-Std.webp',
 				},
 				tablet: {
 					position: 'center center',
 					size: '110% auto',
-					url: '/home/XL-RGB-Std.png',
+					url: '/home/XL-RGB-Std.webp',
 				},
 				mobile: {
 					position: 'center center',
 					size: '120% auto',
-					url: '/home/XL-RGB-Std.png',
+					url: '/home/XL-RGB-Std.webp',
 				},
 			},
 			informationBgColor: '#DFDFDF',
