@@ -146,7 +146,7 @@ const getItemShop = () => {
 			widthType: 'one-fourth',
 		},
 		{
-			urlImage: '/shop/Biip-cartridge-comp.982-2048x1152.jpg',
+			urlImage: '/shop/Biip-cartridge-comp.982-2048x1152.webp',
 			bgColor: '#DFDFDF',
 			widthImage: 'one-hundred',
 			class: {
